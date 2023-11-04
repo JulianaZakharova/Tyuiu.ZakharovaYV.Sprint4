@@ -20,4 +20,5 @@ namespace Tyuiu.ZakharovaYV.Sprint4.Task0.V8.Test
 
             Assert.AreEqual(wait, res);
         }
+    }
 }
