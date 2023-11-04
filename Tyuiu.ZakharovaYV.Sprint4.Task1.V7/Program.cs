@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.ZakharovaYV.Sprint4.Task0.V8.Lib;
+using Tyuiu.ZakharovaYV.Sprint4.Task1.V7.Lib;
 
-namespace Tyuiu.ZakharovaYV.Sprint4.Task0.V8
+namespace Tyuiu.ZakharovaYV.Sprint4.Task1.V7
 {
     class Program
     {
@@ -18,34 +18,46 @@ namespace Tyuiu.ZakharovaYV.Sprint4.Task0.V8
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт#4                                                                *");
             Console.WriteLine("* Тема: Обработка структурных типов                                       *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #8                                                              *");
+            Console.WriteLine("* Задание # 1                                                             *");
+            Console.WriteLine("* Вариант # 7                                                             *");
             Console.WriteLine("* Выполнила: Захарова Юлиана Владимировна | ПКТб-23-2                     *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дан одномерный целочисленный массив на 10 элементов заполненный         *");
-            Console.WriteLine("* статическими значениями в диапазоне от 0 до 9 подсчитать произведение   *");
-            Console.WriteLine("* четных элементов массива. {1 ,6 ,3 ,7 ,5 ,4 ,2 ,7 ,8 ,9}                *");
+            Console.WriteLine("* Дан одномерный целочисленный массив на 11 элементов заполненный         *");
+            Console.WriteLine("* значениями с клавиатуры в диапазоне от 1 до 8 подсчитать сумму четных   *");
+            Console.WriteLine("* элементов массива.  С клавиатуры: 2, 5, 3, 8, 2, 6, 2, 5, 5, 7, 4       *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int[] numsArray = { 1, 6, 3, 7, 5, 4, 2, 7, 8, 9 };
+            int len;
+            Console.WriteLine("Введите количество элементов массива: ");
+            len = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("* Исходный массив *");
-            for (int i = 0; i < numsArray.Length - 1; i++)
+            int[] numsArry = new int[len];
+            for (int i = 0; i <= len - 1; i++)
             {
-                Console.WriteLine(numsArray[i]);
+                Console.WriteLine("Введите значение " + i + "элемента массива: ");
+                numsArry[i] = Convert.ToInt32(Console.ReadLine());
             }
+            Console.WriteLine();
+            Console.WriteLine("Массив:");
+
+            for (int i = 0; i <= len - 1; i++)
+            {
+                Console.WriteLine(numsArry[i] + "\t");
+            }
+            Console.WriteLine();
+            Console.WriteLine();
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(" Произведение четных элементов массива =" + ds.GetMultEvenArrEl(numsArray));
+            int res = ds.Calculate(numsArry);
 
-            Console.WriteLine();
+            Console.WriteLine(res);
             Console.ReadKey();
         }
     }
