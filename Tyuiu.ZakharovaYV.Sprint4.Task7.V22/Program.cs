@@ -23,14 +23,14 @@ namespace Tyuiu.ZakharovaYV.Sprint4.Task7.V22
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт#4                                                                *");
             Console.WriteLine("* Тема: Двумерные массивы. (ввод с клавиатуры)                            *");
-            Console.WriteLine("* Задание # 5                                                             *");
-            Console.WriteLine("* Вариант # 28                                                            *");
+            Console.WriteLine("* Задание # 7                                                             *");
+            Console.WriteLine("* Вариант # 22                                                            *");
             Console.WriteLine("* Выполнила: Захарова Юлиана Владимировна | ПКТб-23-2                     *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дан двумерный целочисленный массив 5 на 5 элементов, заполненный        *");
-            Console.WriteLine("* случайными значениями в диапазоне от -6 до 3.                           *");
-            Console.WriteLine("* Заменить отрицательные элементы на 0.                                   *");
+            Console.WriteLine("* Дана строка из одноразрядных цифр 695324951753684                       *");
+            Console.WriteLine("* преобразовать в матрицу 5 на 3                                          *");
+            Console.WriteLine("* Посчитать произведение четных элементов.                                *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
@@ -58,7 +58,7 @@ namespace Tyuiu.ZakharovaYV.Sprint4.Task7.V22
 
             int res = ds.Calculate(rows, columns, str);
 
-            Console.WriteLine("Сумма четных элементов = " + res);
+            Console.WriteLine("Произведение четных элементов = " + res);
             Console.ReadKey();
         }
     }
