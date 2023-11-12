@@ -22,7 +22,7 @@ namespace Tyuiu.ZakharovaYV.Sprint4.Task7.V22
             Console.Title = "Спринт#4 |Выполнила: Захарова Ю.В. |ПКТб-23-2";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт#4                                                                *");
-            Console.WriteLine("* Тема: Двумерные массивы. (ввод с клавиатуры)                            *");
+            Console.WriteLine("* Тема:Добавление итоговых решений по спринту                             *");
             Console.WriteLine("* Задание # 7                                                             *");
             Console.WriteLine("* Вариант # 22                                                            *");
             Console.WriteLine("* Выполнила: Захарова Юлиана Владимировна | ПКТб-23-2                     *");
